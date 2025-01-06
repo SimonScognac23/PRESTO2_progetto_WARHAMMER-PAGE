@@ -1,0 +1,381 @@
+/* Impostiamo Open Sans come font predefinito per il corpo del sito */
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    /* Rimuove margini di default */
+    padding: 0;
+    /* Rimuove padding di default */
+}
+
+
+
+/* Impostiamo Roboto per i titoli */
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* Variabili per i colori personalizzati */
+:root {
+    --ultramarine: rgb(14, 49, 248);
+    /* Colore Ultramarine */
+    --darkangel: #667e2c;
+    /* Colore Dark Angel */
+    --ironfist: rgb(255, 251, 0);
+    /* Colore Iron Fist */
+}
+
+
+
+/* Classi per il background con i colori personalizzati */
+.bg-ultramarine {
+    background-color: var(--ultramarine);
+}
+
+.bg-darkangel {
+    background-color: var(--darkangel);
+}
+
+.bg-ironfist {
+    background-color: var(--ironfist);
+}
+
+
+
+/* Classi per il testo con i colori personalizzati */
+.text-ultramarine {
+    color: var(--ultramarine);
+}
+
+.text-darkangel {
+    color: var(--darkangel);
+}
+
+.text-ironfist {
+    color: var(--ironfist);
+}
+
+/* Aggiungi un margine superiore per distanziare l'header dalla navbar */
+.containerfluid {
+    margin-top: 70px;
+    /* Puoi regolare questo valore per ottenere lo spazio desiderato */
+}
+
+
+
+
+/* Stili per la Navbar */
+.navbar {
+    height: 140px;
+    transition: 0.7s;
+    /* Transizione per cambiamenti di stile */
+}
+
+
+
+/* Stili per i link della Navbar */
+nav .nav-link {
+    color: var(--ultramarine);
+    /* Colore predefinito per i link */
+
+    font-weight: 700;
+
+}
+
+
+
+/* Hover per i link della Navbar */
+nav .nav-link:hover {
+    color: gold !important;
+    /* Colore al passaggio del mouse */
+}
+
+.logo {
+    width: 50px;
+
+}
+
+
+
+
+
+
+/* Header */
+.header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* Gradiente scuro sopra l'immagine */
+        url('./media/lionElJonson.jpg');
+    /* URL dell'immagine di sfondo */
+    background-repeat: no-repeat;
+    /* Impedisce la ripetizione dell'immagine */
+    background-position: center;
+    /* Posiziona l'immagine al centro */
+    background-size: cover;
+    /* Assicura che l'immagine copra tutto lo spazio dell'header */
+}
+
+.btn-custom {
+    color: var(--darkangel);
+    /* Colore del testo di base */
+    background-color: var(--darkangel);
+    /* Colore di sfondo di base */
+    border: 2px solid var(--darkangel);
+    /* Colore del bordo di base */
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 20px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1) !important;
+    background-color: var(--darkangel) !important;
+    /* Mantieni lo stesso colore di sfondo */
+    border-color: var(--darkangel) !important;
+    /* Mantieni il colore del bordo */
+    color: white !important;
+    /* Cambia il colore del testo su hover per migliorare la leggibilità */
+}
+
+
+
+
+
+
+
+
+/*positioned*/
+
+.col-custom {
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 75px;
+
+
+
+}
+
+.col-custom:hover {
+    transform: scale(1.1);
+    background-color: var(--darkangel);
+    color: white;
+}
+
+.bkg-color {
+    background-image: linear-gradient(to bottom, #667e2c, #a8c68d, #667e2c);
+}
+
+
+/*Numeri incrementali*/
+
+.number {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+
+
+/*Swiper*/
+
+.swiper {
+    height: 600px;
+}
+
+
+.card-review {
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--darkangel);
+    border-radius: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Pagina annunci */
+
+.accordion-item,
+.accordion-button {
+    background-color: var(--darkangel);
+    color: white
+}
+
+
+
+
+.accordion-button:not(.collapsed) {
+    /* .accordion-button è una classe di bottstrap, sono andato a sovrascriverla in modo da personalizzarla*/
+    color: white;
+    background-color: (var(--darkangel));
+    box-shadow: none;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* Importante per togliere il colore che gli sta attorno al button!!!*/
+}
+
+
+.card-custom {
+    /*  height: 200px;  l'altezza la tolgo per far centrarela foto  */
+    width: 30%;
+    border: 2px solid var(--darkangel);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.img-card {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+
+
+/* Chi siamo*/
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--darkangel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opener {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--darkangel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.moved {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--darkangel);
+    background-position: center;
+    background-color: #667e2c;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    background-size: 100px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Card del docente*/
+.flip-card {
+    height: 400px;
+    width: 250px;
+    transition: 0.5s;
+}
+
+/*Quando sto sulla flipcard vai al tuo figlio diretto  .inner e fai qualcosa.. ossia dagli un transform*/
+.flip-card:hover>.inner {
+    transform: rotateY(180deg);
+}
+
+
+/*Creiamo l'inner quello che serve per fare poi la card questo inner dovra avere come figli diretti il div per la parte frontale e posteriore*/
+.inner {
+    border: 2px solid var(--darkangel);
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+/*inner face deve avere le stesse dimensioni del padre, ovvero inner*/
+.inner-face {
+    height: 400px;
+    width: 250px;
+    background-image: url(./media/lionElJonson.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.inner-back {
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    /*ruota il testo di 180 gradi*/
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query per dispositivi mobili (schermi piccoli) */
+@media (max-width: 768px) {
+
+    /* Assicurati che la navbar copra tutta la larghezza e altezza */
+    #navbar {
+        background-size: cover !important;
+        /* Copri tutta la navbar con l'immagine */
+        background-position: center center !important;
+        /* Centra l'immagine sia orizzontalmente che verticalmente */
+    }
+
+
+
+
+}
